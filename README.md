@@ -17,8 +17,19 @@ uses `dd` to write to the SD card.
 
 To run the script:
 ```sh
-git clone --recursive https://github.com/Ivan-Velickovic/odroidc4_uboot_sign.git
-cd odroidc4_uboot_sign
+git clone --recursive https://github.com/Ivan-Velickovic/flash_uboot_odroidc4.git
+cd flash_uboot_odroidc4
 ./flash.sh <PATH TO DEVICE YOU WANT TO FLASH>
 ```
 
+## Using the prebuilt images
+
+```sh
+git clone https://github.com/Ivan-Velickovic/flash_uboot_odroidc4.git
+cd flash_uboot_odroidc4
+DEV=/path/to/device/to/flash
+dd if=prebuilt/u-boot.bin.sd.bin of=$DEV conv=fsync,notrunc bs=512 skip=1 seek=1
+dd if=prebuilt/u-boot.bin.sd.bin of=$DEV conv=fsync,notrunc bs=1 count=440
+```
+
+Note you may need to run `dd` with sudo.
