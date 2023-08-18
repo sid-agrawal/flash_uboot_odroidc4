@@ -7,7 +7,7 @@ Thank you to the U-Boot developers for publishing this information.
 
 To run the script:
 ```sh
-git clone --recursive https://github.com:Ivan-Velickovic/odroidc4_uboot_sign.git
+git clone --recursive https://github.com/Ivan-Velickovic/odroidc4_uboot_sign.git
 cd odroidc4_uboot_sign
 ./flash.sh <PATH TO DEVICE YOU WANT TO FLASH>
 ```
