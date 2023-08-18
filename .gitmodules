@@ -1,0 +1,7 @@
+[submodule "amlogic-boot-fip"]
+	path = amlogic-boot-fip
+	url = https://github.com/LibreELEC/amlogic-boot-fip
+[submodule "u-boot"]
+	path = u-boot
+	url = git@github.com:u-boot/u-boot
+	branch = v2023.07
